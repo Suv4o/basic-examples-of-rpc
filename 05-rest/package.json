@@ -1,0 +1,13 @@
+{
+  "name": "05-rest",
+  "type": "module",
+  "scripts": {
+    "server": "tsx server.ts",
+    "client": "tsx client.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^24.1.0",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  }
+}
