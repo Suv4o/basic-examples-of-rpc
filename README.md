@@ -4,7 +4,7 @@ RPC sounds complex, but the idea is tiny:
 
 **Call a function that lives on another machine.**
 
-To make this concrete, we build the same example five times: a remote function called `add(a, b)`.
+To make this concrete, we build the same example six times: a remote function called `add(a, b)`.
 
 Each step adds structure — not complexity.
 
@@ -25,6 +25,7 @@ That's it.
 | [03-grpc](./03-grpc) | gRPC | Contracts & performance |
 | [04-trpc](./04-trpc) | tRPC | Type safety & developer speed |
 | [05-rest](./05-rest) | REST | Resource-based mental model |
+| [06-orpc](./06-orpc) | oRPC | Type safety & OpenAPI support |
 
 ## Quick Start
 
@@ -53,6 +54,7 @@ npm run client
 | gRPC | Strong contracts, very fast, language-agnostic | More setup, less browser-friendly |
 | tRPC | End-to-end type safety, no API duplication | TypeScript-only |
 | REST | Human-readable, browser-friendly, cacheable | Logic spread across endpoints, less function-like |
+| oRPC | Type safety + OpenAPI, multi-runtime | Newer, requires schema definitions |
 
 ## The Big Takeaway
 
