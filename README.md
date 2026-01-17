@@ -1,5 +1,9 @@
 # A Remote Procedure Call (RPC): From Simple to Modern
 
+![Landing Image](https://res.cloudinary.com/suv4o/image/upload/q_auto,f_auto,w_750,e_sharpen:100/v1768564822/blog/understanding-modern-rpc-frameworks-how-they-work-and-when-to-use-them/understanding-modern-rpc-frameworks-how-they-work-and-when-to-use-them_pkdooe)
+
+This project is part of my blog article [Understanding Modern RPC Frameworks: How They Work and When to Use Them](https://www.trpkovski.com/2026/01/18/understanding-modern-rpc-frameworks-how-they-work-and-when-to-use-them). To explore in detail how this is built, check it out!
+
 RPC sounds complex, but the idea is tiny:
 
 **Call a function that lives on another machine.**
@@ -18,14 +22,14 @@ That's it.
 
 ## Examples
 
-| Folder | Approach | What It Adds |
-|--------|----------|--------------|
-| [01-plain-rpc](./01-plain-rpc) | Plain RPC | Core idea |
-| [02-json-rpc](./02-json-rpc) | JSON-RPC | Structure & rules |
-| [03-grpc](./03-grpc) | gRPC | Contracts & performance |
-| [04-trpc](./04-trpc) | tRPC | Type safety & developer speed |
-| [05-rest](./05-rest) | REST | Resource-based mental model |
-| [06-orpc](./06-orpc) | oRPC | Type safety & OpenAPI support |
+| Folder                         | Approach  | What It Adds                  |
+| ------------------------------ | --------- | ----------------------------- |
+| [01-plain-rpc](./01-plain-rpc) | Plain RPC | Core idea                     |
+| [02-json-rpc](./02-json-rpc)   | JSON-RPC  | Structure & rules             |
+| [03-grpc](./03-grpc)           | gRPC      | Contracts & performance       |
+| [04-trpc](./04-trpc)           | tRPC      | Type safety & developer speed |
+| [05-rest](./05-rest)           | REST      | Resource-based mental model   |
+| [06-orpc](./06-orpc)           | oRPC      | Type safety & OpenAPI support |
 
 ## Quick Start
 
@@ -47,14 +51,14 @@ npm run client
 
 ## Comparison
 
-| Approach | Pros | Cons |
-|----------|------|------|
-| Plain RPC | Works, simple | No rules, no error handling, no contracts |
-| JSON-RPC | Clear rules, tooling support | Manual typing, runtime errors |
-| gRPC | Strong contracts, very fast, language-agnostic | More setup, less browser-friendly |
-| tRPC | End-to-end type safety, no API duplication | TypeScript-only |
-| REST | Human-readable, browser-friendly, cacheable | Logic spread across endpoints, less function-like |
-| oRPC | Type safety + OpenAPI, multi-runtime | Newer, requires schema definitions |
+| Approach  | Pros                                           | Cons                                              |
+| --------- | ---------------------------------------------- | ------------------------------------------------- |
+| Plain RPC | Works, simple                                  | No rules, no error handling, no contracts         |
+| JSON-RPC  | Clear rules, tooling support                   | Manual typing, runtime errors                     |
+| gRPC      | Strong contracts, very fast, language-agnostic | More setup, less browser-friendly                 |
+| tRPC      | End-to-end type safety, no API duplication     | TypeScript-only                                   |
+| REST      | Human-readable, browser-friendly, cacheable    | Logic spread across endpoints, less function-like |
+| oRPC      | Type safety + OpenAPI, multi-runtime           | Newer, requires schema definitions                |
 
 ## The Big Takeaway
 
@@ -70,14 +74,14 @@ add(2, 3)
 
 They just disagree on:
 
-- How strict the rules are
-- Who enforces them
-- How much the developer should think
+-   How strict the rules are
+-   Who enforces them
+-   How much the developer should think
 
 ## Tech Stack
 
 All examples use:
 
-- TypeScript
-- Node.js with ESM modules
-- [tsx](https://github.com/privatenumber/tsx) for running TypeScript directly
+-   TypeScript
+-   Node.js with ESM modules
+-   [tsx](https://github.com/privatenumber/tsx) for running TypeScript directly
